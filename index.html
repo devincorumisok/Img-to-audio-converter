@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image-Audio Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Image-Audio Converter</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Convert Image to Audio</h2>
+            <input type="file" id="imageInput" accept="image/*">
+            <button onclick="convertImageToAudio()">Convert to Audio</button>
+            <a id="downloadAudioLink" style="display: none;" download="output.mp3">Download Audio</a>
+        </section>
+        <section>
+            <h2>Convert Audio to Image</h2>
+            <input type="file" id="audioInput" accept="audio/*">
+            <button onclick="convertAudioToImage()">Convert to Image</button>
+            <canvas id="audioCanvas" style="display: none;"></canvas>
+            <a id="downloadImageLink" style="display: none;" download="output.png">Download Image</a>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
